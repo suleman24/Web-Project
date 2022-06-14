@@ -1,0 +1,64 @@
+ .header .header-1{
+    background-color: var(--light-bg);
+ }
+ 
+ .header .header-1 .flex{
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin:0 auto;
+ }
+ 
+ .header .header-2{
+    background-color: #313131;
+    box-shadow: var(--box-shadow);
+ }
+  .header .header-1 .flex .share a{
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    color:white;
+ }
+ .header .header-1 .flex p{
+    font-size: 2rem;
+    color:white;
+ }
+ 
+ .header .header-1 .flex p a{
+    color:white;
+ }
+ 
+ .header .header-1 .flex p a:hover{
+    text-decoration: underline;
+ }
+ 
+ .header .header-2 .flex .logo{
+    font-size: 2.5rem;
+    color:white;
+ }
+ 
+ 
+  
+ .header .header-2 .flex .icons > *{
+    font-size: 2.5rem;
+    color:white;
+    cursor: pointer;
+    margin-left: 1.5rem;
+ }
+ 
+ 
+ .header .header-2 .flex .user-box{
+    position: absolute;
+    top:120%; right:2rem;
+    background-color: black;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding:2rem;
+    text-align: center;
+    width: 30rem;
+    display: none;
+    animation: fadeIn .2s linear;
+ }
+ 
