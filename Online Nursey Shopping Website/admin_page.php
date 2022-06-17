@@ -35,7 +35,66 @@ if(!isset($admin_id)){
 <center>    <h1 class="title">Dashboard</h1>  </center>
 
 
+
+
    <div class="box-container">
+
+
+<button style="background-color:#313131">
+<div class="box">
+         <p>Payments</p>
+      </div>
+
+
+
+</button>
+
+<button style="background-color:#313131">
+<div class="box">
+         <p>Accounts</p>
+      </div>
+
+
+
+</button>
+
+
+
+ <div class="box">
+         <?php 
+            $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
+            $number_of_products = mysqli_num_rows($select_products);
+         ?>
+		 <h3>Products Added</h3>
+         <p><?php echo $number_of_products; ?></p>
+         
+      </div>
+
+
+
+
+<div class="box">
+         <?php 
+            $select_orders = mysqli_query($conn, "SELECT * FROM `orders`") or die('query failed');
+            $number_of_orders = mysqli_num_rows($select_orders);
+         ?>
+		  <h3>Orders Placed</h3>
+         <p><?php echo $number_of_orders; ?></p>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <div class="box">
          <?php
@@ -67,55 +126,7 @@ if(!isset($admin_id)){
          <p>Completed Payments</p>
       </div>
 
-      <div class="box">
-         <?php 
-            $select_orders = mysqli_query($conn, "SELECT * FROM `orders`") or die('query failed');
-            $number_of_orders = mysqli_num_rows($select_orders);
-         ?>
-         <h3><?php echo $number_of_orders; ?></h3>
-         <p>Orders Placed</p>
-      </div>
-
-      <div class="box">
-         <?php 
-            $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
-            $number_of_products = mysqli_num_rows($select_products);
-         ?>
-         <h3><?php echo $number_of_products; ?></h3>
-         <p>Products Added</p>
-      </div>
-	  
-
-	  <div class="box">
-         <?php 
-            $select_account = mysqli_query($conn, "SELECT * FROM `users`") or die('query failed');
-            $number_of_account = mysqli_num_rows($select_account);
-         ?>
-         <h3><?php echo $number_of_account; ?></h3>
-         <p>Total Accounts</p>
-      </div>
-	  
-	  
-	  
-	  
-      <div class="box">
-         <?php 
-            $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE user_type = 'user'") or die('query failed');
-            $number_of_users = mysqli_num_rows($select_users);
-         ?>
-         <h3><?php echo $number_of_users; ?></h3>
-         <p>User Accounts</p>
-      </div>
-
-      <div class="box">
-         <?php 
-            $select_admins = mysqli_query($conn, "SELECT * FROM `users` WHERE user_type = 'admin'") or die('query failed');
-            $number_of_admins = mysqli_num_rows($select_admins);
-         ?>
-         <h3><?php echo $number_of_admins; ?></h3>
-         <p>Admin Accounts</p>
-      </div>
-	  
+      
 	  
 	  
 	  
