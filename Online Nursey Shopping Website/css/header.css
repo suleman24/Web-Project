@@ -78,32 +78,17 @@ button
 
 
 
- @media (max-width:768px){
- 
-    #button{
+ @media (max-width:600px){
+  #menu-btn{
        display: inline-block;
-    }
- 
-    .header .nav__Links{
-       position: absolute;
-       top:99%; left:0; right:0;
-       background-color: #24252A;
- 
-       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
- 
-    .header .navbar active{
-       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
- 
-    .header .flex .navbar a{
-       display: block;
-       font-size: 2.5rem;
-       margin:2rem;
-    }
- 
-    .home .content h3{
-       font-size: 3.5rem;
-    }
+  }
+    .nav__links li a {
+		
+	}
  
  }
+ @media only screen and (max-width: 600px) {
+  * {
+    font-size:10px;
+  }
+}
