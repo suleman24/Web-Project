@@ -1,0 +1,215 @@
+
+.accounts .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   align-items: flex-start;
+}
+
+
+.accounts .box-container .box{
+   border-radius: 2%;
+   padding:4%;
+   background-color: #313131;
+   box-shadow: #313131;
+   border:1rem solid black;
+   text-align: center;
+   
+}
+
+.accounts .box-container .box h3{
+   font-size: 3rem;
+   color:white; 
+}
+
+.accounts .box-container .box p{
+	background-color:white;
+   color:#white;
+   font-size: 2rem;
+   border:1rem solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.users .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   align-items: flex-start;
+}
+
+.title{
+   font-size: 5rem;
+   color:var(--black); 
+}
+
+.h1{
+  font-size:20%
+}
+
+.users .box-container .box{
+   border-radius: 2%;
+   padding:4%;
+   background-color: gray;
+   box-shadow: #313131;
+   border:1rem solid black;
+   text-align: center;
+   
+}
+
+.users .box-container .box h3{
+   font-size: 3rem;
+   color:white; 
+}
+
+.users .box-container .box a{
+   background-color:red;
+   color:white;
+   font-size: 2rem;
+   padding-left:2rem;
+   padding-right:2rem;
+   padding-top:1rem;
+   padding-bottom:1rem;
+   border:1rem pink; 
+   border-radius:25%;
+}
+
+
+
+ .header .header-1{
+    background-color: var(--light-bg);
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background-color: var(--light-bg);
+}
+
+section{
+   padding:3rem 2rem;
+}
+
+
+.users .box-container .box p{
+   padding-bottom: 1.5rem;
+   font-size: 2rem;
+   color:white;
+}
+
+.users .box-container .box p span{
+   color:white;
+}
+
+.users .box-container .box .delete-btn{
+   margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+   }
+
+   .header .flex .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .flex .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .flex .navbar a{
+      margin:2rem;
+      display: block;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .title{
+      font-size: 3rem;
+   }
+
+}
