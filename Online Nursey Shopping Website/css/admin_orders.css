@@ -1,0 +1,75 @@
+
+.orders .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 30rem);
+   justify-content: center;
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   align-items: flex-start;
+}
+
+.orders .box-container .box{
+   background-color: #24252A;
+   padding:2rem;
+   border:var(--border);
+   box-shadow: var(--box-shadow);
+   border-radius: .5rem;
+}
+
+.orders .box-container .box p{
+   padding-bottom: 1rem;
+   font-size: 2rem;
+   color:white;
+}
+
+.orders .box-container .box p span{
+   font-size: 1.5rem;
+   color:#c3daf7;
+}
+
+.orders .box-container .box form{
+   text-align: center;
+}
+
+.orders .box-container .box form select{
+   border-radius: .5rem;
+   margin:.5rem 0;
+   width: 100%;
+   background-color: var(--light-bg);
+   border:var(--border);
+   padding:1.2rem 1.4rem;
+   font-size: 1.8rem;
+   color:var(--black);
+}
+
+
+
+
+
+.delete-button{
+	background-color:red;
+	margin-left:2rem;
+   color:white;
+   font-size: 2rem;
+   padding-left:2rem;
+   padding-right:2rem;
+   padding-top:1rem;
+   padding-bottom:1rem;
+   border:1rem pink; 
+   border-radius:25%;
+	 
+ }
+ 
+  .update-button{
+	background-color:white;
+		margin-right:2rem;
+   color:#24252A;
+   font-size: 2rem;
+   padding-left:2rem;
+   padding-right:2rem;
+   padding-top:1rem;
+   padding-bottom:1rem;
+   border:1rem pink; 
+   border-radius:25%;
+ }
