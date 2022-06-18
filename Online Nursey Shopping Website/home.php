@@ -41,7 +41,7 @@ if(isset($_POST['add_to_cart'])){
 
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/header.css">
-
+	<link rel="stylesheet" href="css/products.css">
 </head>
 <body>
  
@@ -63,14 +63,14 @@ if(isset($_POST['add_to_cart'])){
             while($fetch_products = mysqli_fetch_assoc($select_products)){
       ?>
      <form action="" method="post" class="box">
-      <img class="image" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
+      <img style="height:150px;max-width:150px" src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
       <div class="name"><?php echo $fetch_products['name']; ?></div>
-      <div class="price">$<?php echo $fetch_products['price']; ?>/-</div>
+      <div class="price">Rs <?php echo $fetch_products['price']; ?> </div>
       <input type="number" min="1" name="product_quantity" value="1" class="qty">
       <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
       <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>">
       <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
-      <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+      <input type="submit" value="add to cart" name="add_to_cart" class="add-button">
      </form>
       <?php
          }
@@ -105,7 +105,7 @@ if(isset($_POST['add_to_cart'])){
 
 <?php include 'footer.php'; ?>
 
-<!-- custom js file link  -->
+
 <script src="js/script.js"></script>
 
 </body>

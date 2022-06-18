@@ -22,7 +22,6 @@ if(isset($message)){
                 <li><a href="admin_products.php">Products</a></li>
                 <li> <a href="admin_orders.php">Orders</a></li>
 				<li ><a href="admin_users.php">Users</a></li>
-                <li><a href="admin_contacts.php">Messages</a></li>
             </ul>
         </nav>
  
