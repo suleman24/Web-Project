@@ -26,6 +26,8 @@
    text-align: center;
 }
 
+
+
 .dashboard .box-container .box h3{
    font-size: 3rem;
    color:white; 
@@ -51,6 +53,8 @@
    text-align: center;
 	
 }
+
+  .box:hover {background-color: #617c8e;}
 
 
 

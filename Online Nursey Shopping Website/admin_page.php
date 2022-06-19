@@ -40,7 +40,7 @@ if(!isset($admin_id)){
    <div class="box-container">
 
 
-<button style="background-color:#313131">
+<button style="background-color:#313131"    onclick="window.location.href='admin_payments.php';">
 <div class="box">
          <p>Payments</p>
       </div>
@@ -49,7 +49,7 @@ if(!isset($admin_id)){
 
 </button>
 
-<button style="background-color:#313131">
+<button style="background-color:#313131"    onclick="window.location.href='admin_users.php';">
 <div class="box">
          <p>Accounts</p>
       </div>
@@ -86,70 +86,10 @@ if(!isset($admin_id)){
 
 
 
-
-
-
-
-
-
-
-
-
-
-      <div class="box">
-         <?php
-            $total_pendings = 0;
-            $select_pending = mysqli_query($conn, "SELECT total_price FROM `orders` WHERE payment_status = 'pending'") or die('query failed');
-            if(mysqli_num_rows($select_pending) > 0){
-               while($fetch_pendings = mysqli_fetch_assoc($select_pending)){
-                  $total_price = $fetch_pendings['total_price'];
-                  $total_pendings += $total_price;
-               };
-            };
-         ?>
-         <h3>$<?php echo $total_pendings; ?>/-</h3>
-         <p>Total Pendings</p>
-      </div>
-
-      <div class="box">
-         <?php
-            $total_completed = 0;
-            $select_completed = mysqli_query($conn, "SELECT total_price FROM `orders` WHERE payment_status = 'completed'") or die('query failed');
-            if(mysqli_num_rows($select_completed) > 0){
-               while($fetch_completed = mysqli_fetch_assoc($select_completed)){
-                  $total_price = $fetch_completed['total_price'];
-                  $total_completed += $total_price;
-               };
-            };
-         ?>
-         <h3>$<?php echo $total_completed; ?>/-</h3>
-         <p>Completed Payments</p>
-      </div>
-
-      
-	  
-	  
-	  
-		
-
-     
-
-
    </div>
 
 </section>
 
-
-
-
-
-
-
-
-
-
-
-<!-- custom admin js file link  -->
 <script src="js/admin_script.js"></script>
 
 </body>

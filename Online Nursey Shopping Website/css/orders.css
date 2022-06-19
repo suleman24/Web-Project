@@ -43,7 +43,42 @@
    color:var(--black);
 }
 
+ .placed-orders .box-container{
+    max-width: 1200px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:1.5rem;
 
+ }
+ 
+ .placed-orders .box-container .empty{
+    flex:1;
+ }
+ 
+ .placed-orders .box-container .box{
+    flex:1 1 40rem;
+    border-radius: 10%;
+    padding:2rem;
+    border:var(--border);
+    padding:1rem 2rem;
+	background-color: #24252A;
+
+ }
+ 
+ .placed-orders .box-container .box p{
+     padding-bottom: 1rem;
+   font-size: 2rem;
+   color:white;
+ }
+ 
+ .placed-orders .box-container .box p span{
+    color:#617c8e;
+ }
+ 
+ 
+ 
 
 
 
@@ -60,7 +95,7 @@
    border-radius:25%;
 	 
  }
-     .delete-button:hover {background-color: #a00e0e;}
+    .delete-button:hover {background-color: #a00e0e;}
 
  
   .update-button{
@@ -75,4 +110,4 @@
    border:1rem pink; 
    border-radius:25%;
  }
-      .update-button:hover {background-color: #617c8e;}
+     .update-button:hover {background-color: #617c8e;}

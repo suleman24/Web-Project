@@ -49,16 +49,18 @@ if(isset($_POST['add_to_cart'])){
    
 <?php include 'header.php'; ?>
 
-
+<div class="heading">
+   <h3>Shop here</h3>
+</div>
 
 <section class="products">
 
-   <h1 class="title">latest Plants</h1>
+   <h1 class="title">All Available Plants</h1>
 
    <div class="box-container">
 
       <?php  
-         $select_products = mysqli_query($conn, "SELECT * FROM `products` LIMIT 3") or die('query failed');
+         $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
          if(mysqli_num_rows($select_products) > 0){
             while($fetch_products = mysqli_fetch_assoc($select_products)){
       ?>
@@ -86,16 +88,7 @@ if(isset($_POST['add_to_cart'])){
 
 </section>
 
-<section class="home">
 
-   <div class="content">
-      <h3>COMSATS Nursery</h3>
-      <p>From the seeds,</p>
-	        <p>Grow mighty trees</p>
-
-   </div>
-
-</section>
 
 
 

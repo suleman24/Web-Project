@@ -5,8 +5,8 @@ session_start();
 
 if(isset($_POST['submit'])){
 
-   $email = mysqli_real_escape_string($conn, $_POST['email']);
-   $pass = mysqli_real_escape_string($conn, $_POST['password']);
+   $email =  $_POST['email'];
+   $pass = md5($_POST['password']);
 
    $select_users = mysqli_query($conn, "SELECT * FROM `users` WHERE email = '$email' AND password = '$pass'") or die('query failed');
 
@@ -102,7 +102,7 @@ if(isset($_POST['submit'])){
                 <tr>
                     <h1 style="color:red">
                     <?php
-                    error_reporting(0);
+					error_reporting(0);
                     echo $_GET['regmsg'];
                     ?>
                     </h1>

@@ -3,10 +3,10 @@
 include "config.php";
 
 if(isset($_POST['submit'])){
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $pass = mysqli_real_escape_string($conn, $_POST['password']);
-    $cpass = mysqli_real_escape_string($conn, $_POST['cpassword']);
+    $name =  $_POST['name'];
+    $email =  $_POST['email'];
+    $pass =  md5($_POST['password']);
+    $cpass =  md5($_POST['cpassword']);
     $user_type = $_POST['user_type'];
  
     if(!preg_match("|^[a-zA-Z]{3,25}$|",$name))

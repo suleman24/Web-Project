@@ -20,9 +20,11 @@ if(!isset($user_id)){
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>About</title>
 
-   <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/about-heading.css">
       <link rel="stylesheet" href="css/header.css">
+	        <link rel="stylesheet" href="css/footer.css">
+
 
 
 </head>

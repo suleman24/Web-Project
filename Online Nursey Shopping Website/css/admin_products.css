@@ -129,6 +129,8 @@
    border-radius:25%;
 	 
  }
+ 
+   .add-button:hover {background-color: #617c8e;}
 
 
 
@@ -145,6 +147,7 @@
    border-radius:25%;
 	 
  }
+   .delete-button:hover {background-color: #a00e0e;}
  
   .update-button{
 	background-color:#24252A;
@@ -158,3 +161,5 @@
    border:1rem pink; 
    border-radius:25%;
  }
+ 
+    .update-button:hover {background-color: #617c8e;}
